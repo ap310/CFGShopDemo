@@ -1,4 +1,4 @@
-本项目为一个简单的购物类JAVA服务程序，使用Spring boot框架 前端使用 AngularJs+Ionic 框架，欢迎大家进行补充完善。  
+本项目为一个简单的购物类Web服务程序，后端使用Spring boot框架 前端使用 AngularJs+Ionic 框架，欢迎大家进行补充完善。  
 
 问题  
 
