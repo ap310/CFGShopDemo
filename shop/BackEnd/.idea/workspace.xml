@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f0dadaa2-afcf-4ffe-b595-ad991eacd9ce" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../FrontEnd/www/js/source/app/config.js" afterPath="$PROJECT_DIR$/../FrontEnd/www/js/source/app/config.js" />
-    </list>
+    <list default="true" id="f0dadaa2-afcf-4ffe-b595-ad991eacd9ce" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path=".idea/dataSources.local.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -1211,7 +1209,7 @@
       <workItem from="1498946575664" duration="20000" />
       <workItem from="1498946623100" duration="23282000" />
       <workItem from="1498987521162" duration="4845000" />
-      <workItem from="1499051058067" duration="9197000" />
+      <workItem from="1499051058067" duration="9222000" />
     </task>
     <servers />
   </component>
@@ -1248,7 +1246,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="56654000" />
+    <option name="totallyTimeSpent" value="56679000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
