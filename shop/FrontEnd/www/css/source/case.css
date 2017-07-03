@@ -1,0 +1,71 @@
+@charset "utf-8";
+.background {
+    /*background-color: #007aff;*/
+    background: linear-gradient(to right, #0e419b, #19859c);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.phone-center {
+    background: transparent;
+    width: 100%;
+    height: 704px;
+    margin-top: -352px;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    top: 50%;
+}
+.phone-and-desc {
+    width: 730px;
+    height: 704px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.app-desc {
+    width: 365px;
+    height: 704px;
+    float: left;
+}
+.app-desc img.logo {
+    display: block;
+    width: 100px;
+    position: relative;
+    top: 40%;
+    left: 50%;
+    margin-top:-50px;
+    margin-left:-50px;
+}
+.app-desc p{
+    color:#FFF;
+    position: relative;
+    top: 40%;
+    left: 50%;
+    margin-left:-6.5em;
+}
+.app-desc img.qrcode {
+    display: block;
+    width: 228px;
+    position: relative;
+    top: 55.6%;
+    left: 50%;
+    margin-top:-114px;
+    margin-left:-114px;
+}
+.phone-case {
+    width: 365px;
+    height: 704px;
+    background: url("../../img/phone-case.png") no-repeat right top;
+    float: left;
+}
+.screen {
+    width: 320px;
+    height: 584px;
+    padding-top: 70px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.screen .view-container {
+    position: relative;
+}

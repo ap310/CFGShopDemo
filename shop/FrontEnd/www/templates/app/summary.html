@@ -1,0 +1,29 @@
+<ion-view view-title="CFG SHOP" >
+    <ion-header-bar  align-title="center" class="bar-positive">
+        <h1 class="title">Welcome to CFG SHOP</h1>
+    </ion-header-bar>
+    <ion-content>
+        <div class="content padding has-header">
+            <p>
+                <button class="button button-clear button-calm">Your Shopping Summary:</button>
+            </p>
+        </div>
+        <ion-list type="card" ng-repeat="orderItem in SummaryInfo" >
+
+            <div class="item item-divider">
+                {{$index+1}}. ITEM {{orderItem.productName}}
+            </div>
+            <div class="item item-text-wrap item-button-right">
+                <label class="item item-input">
+                    <span class="input-label positive">Quantity:</span>
+                    <span class="input-label balanced">{{orderItem.purchasedNumber}}</span>
+                </label>
+            </div>
+        </ion-list>
+
+
+        <div class="list list-inset">
+            <button class="button button-block button-energized"    ng-click="home()">Return</button>
+        </div>
+    </ion-content>
+</ion-view>

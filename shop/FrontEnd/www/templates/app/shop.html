@@ -1,0 +1,48 @@
+<ion-view view-title="CFG SHOP" >
+    <ion-header-bar  align-title="center" class="bar-positive">
+        <h1 class="title">Welcome to CFG SHOP</h1>
+    </ion-header-bar>
+
+    <ion-content>
+
+        <div class="content padding has-header">
+            <p>
+                <button class="button button-clear button-calm">Currently available in our shop:</button>
+            </p>
+        </div>
+        <ion-list type="card" ng-repeat="productInfo in ProductInfos" >
+
+            <div class="item item-divider">
+                {{$index+1}}. ITEM {{productInfo.productName}}
+            </div>
+
+            <div class="item item-text-wrap item-button-right">
+                <span class="input-label positive">Remaining Quantity:    {{productInfo.productNumber}} </span>
+            </div>
+        </ion-list>
+
+        <div class="content padding has-header">
+            <p>
+                <button class="button button-clear button-calm">Your Shopping:</button>
+            </p>
+        </div>
+        <ion-list type="card" ng-repeat="productInfo in ProductInfos" >
+
+            <div class="item item-divider">
+                {{$index+1}}. ITEM {{productInfo.productName}}
+            </div>
+            <div class="item item-text-wrap item-button-right">
+                <label class="item item-input">
+                    <span class="input-label positive">Quantity:</span>
+                    <input type="hidden" ng-model="$parent.orderItems[$index].productNo"  value="{{productInfo.productNo}}"  class="value-right" name="orderItemId{{productInfo.productNo}}">
+                    <input type="text" maxlength="10" onkeyup="this.value=this.value.replace(/\D/g,'')" onafterpaste="this.value=this.value.replace(/\D/g,'')"  ng-model="$parent.orderItems[$index].purchasedNumber"  placeholder="input number"  value="0" class="value-right" name="orderItemNumber">
+                </label>
+            </div>
+        </ion-list>
+
+
+        <div class="list list-inset">
+            <button class="button button-block button-energized"    ng-click="order()">Buy</button>
+        </div>
+    </ion-content>
+</ion-view>
