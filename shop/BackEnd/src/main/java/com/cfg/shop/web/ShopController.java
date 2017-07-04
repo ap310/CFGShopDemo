@@ -58,7 +58,7 @@ public class ShopController {
     public Map<String, Object> Order(@RequestBody List<OrderItem> OrderItems, HttpServletResponse httpServletResponse) {
         Map<String, Object> responseJson = new HashMap<String, Object>();
         String error = "";
-        if(OrderItems==null)
+        if(OrderItems==null||OrderItems.size()<=0)
         {
             error = "input error,pleas contact the administrator";
             logger.error(error);
@@ -113,7 +113,7 @@ public class ShopController {
     public Map<String, Object> QueryOrder(@PathVariable String orderNo, HttpServletResponse httpServletResponse) {
         Map<String, Object> responseJson = new HashMap<String, Object>();
         String error = "";
-        if(orderNo==null)
+        if(orderNo==null||orderNo.trim().equals(""))
         {
             error = "input error,pleas contact the administrator";
             logger.error(error);
