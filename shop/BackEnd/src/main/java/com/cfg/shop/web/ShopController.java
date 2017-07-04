@@ -58,6 +58,13 @@ public class ShopController {
     public Map<String, Object> Order(@RequestBody List<OrderItem> OrderItems, HttpServletResponse httpServletResponse) {
         Map<String, Object> responseJson = new HashMap<String, Object>();
         String error = "";
+        if(OrderItems==null)
+        {
+            error = "input error,pleas contact the administrator";
+            logger.error(error);
+            responseJson.put("error", error);
+            return responseJson;
+        }
         String OrderNo = shopService.createOrderNo();
         List<Product> productList = new ArrayList<>();
         for (OrderItem orderItem : OrderItems) {
@@ -105,6 +112,14 @@ public class ShopController {
     @RequestMapping(value = "/queryOrder/{orderNo}", method = RequestMethod.GET)
     public Map<String, Object> QueryOrder(@PathVariable String orderNo, HttpServletResponse httpServletResponse) {
         Map<String, Object> responseJson = new HashMap<String, Object>();
+        String error = "";
+        if(orderNo==null)
+        {
+            error = "input error,pleas contact the administrator";
+            logger.error(error);
+            responseJson.put("error", error);
+            return responseJson;
+        }
 
         List<OrderItem> OrderItems = shopService.queryOrder(orderNo);
         if (OrderItems != null && OrderItems.isEmpty()) {
